@@ -32,26 +32,65 @@ class _DataPage1State extends State<DataPage1> {
   TextEditingController _conY4 = new TextEditingController();
   TextEditingController _conY5 = new TextEditingController();
 
-  double _X1 = 4;
-  double _X2 = 6;
-  double _X3 = 8;
-  double _X4 = 10;
-  double _X5 = 12;
-  double _Y1 = 5;
-  double _Y2 = 7;
-  double _Y3 = 9;
-  double _Y4 = 11;
-  double _Y5 = 13;
+  double _X0 = 1;
+  double _X1 = 3;
+  double _X2 = 5;
+  double _X3 = 7;
+  double _X4 = 9;
+
+  double _Y0 = 2;
+  double _Y1 = 4;
+  double _Y2 = 6;
+  double _Y3 = 8;
+  double _Y4 = 10;
+  
+  double _H0;
   double _H1;
   double _H2;
   double _H3;
   double _H4;
-  double _H5;
+  
+  double _A0;
   double _A1;
   double _A2;
   double _A3;
   double _A4;
-  double _A5;
+
+  double _L0;
+  double _L1;
+  double _L2;
+  double _L3;
+  double _L4;
+
+  double _U0;
+  double _U1;
+  double _U2;
+  double _U3;
+  double _U4;
+
+  double _Z0;
+  double _Z1;
+  double _Z2;
+  double _Z3;
+  double _Z4;
+
+  double _C0;
+  double _C1;
+  double _C2;
+  double _C3;
+  double _C4;
+
+  double _B0;
+  double _B1;
+  double _B2;
+  double _B3;
+  double _B4;
+
+  double _D0;
+  double _D1;
+  double _D2;
+  double _D3;
+  double _D4;
 
   @override
   Widget build(BuildContext context) {
@@ -260,16 +299,16 @@ class _DataPage1State extends State<DataPage1> {
   }
 
   Widget _ingresarDatos() {
-    _conX1.text = _X1.toString();
-    _conX2.text = _X2.toString();
-    _conX3.text = _X3.toString();
-    _conX4.text = _X4.toString();
-    _conX5.text = _X5.toString();
-    _conY1.text = _Y1.toString();
-    _conY2.text = _Y2.toString();
-    _conY3.text = _Y3.toString();
-    _conY4.text = _Y4.toString();
-    _conY5.text = _Y5.toString();
+    _conX1.text = _X0.toString();
+    _conX2.text = _X1.toString();
+    _conX3.text = _X2.toString();
+    _conX4.text = _X3.toString();
+    _conX5.text = _X4.toString();
+    _conY1.text = _Y0.toString();
+    _conY2.text = _Y1.toString();
+    _conY3.text = _Y2.toString();
+    _conY4.text = _Y3.toString();
+    _conY5.text = _Y4.toString();
     return Column(
       children: <Widget>[
 
@@ -284,7 +323,7 @@ class _DataPage1State extends State<DataPage1> {
                   hintText: 'X1',
                 ),
                 onChanged: (valor) => setState(() {
-                  _X1 = double.parse(valor);
+                  _X0 = double.parse(valor);
                 }),
               ),
             ),
@@ -298,7 +337,7 @@ class _DataPage1State extends State<DataPage1> {
                   hintText: 'Y1',
                 ),
                 onChanged: (valor) => setState(() {
-                  _Y1 = double.parse(valor);
+                  _Y0 = double.parse(valor);
                 }),
               ),
             ),
@@ -318,7 +357,7 @@ class _DataPage1State extends State<DataPage1> {
                   hintText: 'X2',
                 ),
                 onChanged: (valor) => setState(() {
-                  _X2 = double.parse(valor);
+                  _X1 = double.parse(valor);
                 }),
               ),
             ),
@@ -332,7 +371,7 @@ class _DataPage1State extends State<DataPage1> {
                   hintText: 'Y2',
                 ),
                 onChanged: (valor) => setState(() {
-                  _Y2 = double.parse(valor);
+                  _Y1 = double.parse(valor);
                 }),
               ),
             ),
@@ -352,7 +391,7 @@ class _DataPage1State extends State<DataPage1> {
                   hintText: 'X3',
                 ),
                 onChanged: (valor) => setState(() {
-                  _X3 = double.parse(valor);
+                  _X2 = double.parse(valor);
                 }),
               ),
             ),
@@ -366,7 +405,7 @@ class _DataPage1State extends State<DataPage1> {
                   hintText: 'Y3',
                 ),
                 onChanged: (valor) => setState(() {
-                  _Y3 = double.parse(valor);
+                  _Y2 = double.parse(valor);
                 }),
               ),
             ),
@@ -386,7 +425,7 @@ class _DataPage1State extends State<DataPage1> {
                   hintText: 'X4',
                 ),
                 onChanged: (valor) => setState(() {
-                  _X4 = double.parse(valor);
+                  _X3 = double.parse(valor);
                 }),
               ),
             ),
@@ -400,7 +439,7 @@ class _DataPage1State extends State<DataPage1> {
                   hintText: 'Y4',
                 ),
                 onChanged: (valor) => setState(() {
-                  _Y4 = double.parse(valor);
+                  _Y3 = double.parse(valor);
                 }),
               ),
             ),
@@ -420,7 +459,7 @@ class _DataPage1State extends State<DataPage1> {
                   hintText: 'X5',
                 ),
                 onChanged: (valor) => setState(() {
-                  _X5 = double.parse(valor);
+                  _X4 = double.parse(valor);
                 }),
               ),
             ),
@@ -434,7 +473,7 @@ class _DataPage1State extends State<DataPage1> {
                   hintText: 'Y5',
                 ),
                 onChanged: (valor) => setState(() {
-                  _Y5 = double.parse(valor);
+                  _Y4 = double.parse(valor);
                 }),
               ),
             ),
@@ -452,7 +491,7 @@ class _DataPage1State extends State<DataPage1> {
       children: <Widget>[
         Text('Ecuaciones obtenidas mediante Spline', style: TextStyle(fontWeight: FontWeight.w600, fontSize: 16)),
         SizedBox(height: 10.0),
-        Text('Ecuación 1: x^2+x+3\n\nEcuación 2: x^2+x+3\n\nEcuación 3: x^2+x+3\n\nEcuación 4: x^2+x+3'),
+        Text(_ecuacionSpline()),
         SizedBox(height: 20.0),
         Text('Matriz de coeficientes', style: TextStyle(fontWeight: FontWeight.w600, fontSize: 16)),
         SizedBox(height: 10.0),
@@ -466,14 +505,70 @@ class _DataPage1State extends State<DataPage1> {
 
   String _ecuacionSpline() {
 
+    String resultado;
+
     //Paso 1
+    _H0 = _X1-_X0;
     _H1 = _X2-_X1;
     _H2 = _X3-_X2;
     _H3 = _X4-_X3;
-    _H4 = _X5-_X4;
 
     //Paso 2
-    _A1 = ((3/_H2)*(_Y3-_Y2)-(3/_H1)*(_Y2));
+    _A1 = ((3/_H1)*(_Y2-_Y1)-(3/_H0)*(_Y1-_Y0));
+    _A2 = ((3/_H2)*(_Y3-_Y2)-(3/_H1)*(_Y2-_Y1));
+    _A3 = ((3/_H3)*(_Y4-_Y3)-(3/_H2)*(_Y3-_Y2));
+
+    //Paso 3
+    _L0 = 1;
+    _U0 = 0;
+    _Z0 = 0;
+
+    //Paso 4
+    _L1 = ((2*(_X2-_X0)) - (_H0 * _U0));
+    _U1 = _H1/_L1;
+    _Z1 = ((_A1 - (_H0*_Z0))/_L1);
+
+    _L2 = ((2*(_X3-_X1)) - (_H1 * _U1));
+    _U2 = _H2/_L2;
+    _Z2 = ((_A2 - (_H1*_Z1))/_L2);
+
+    _L3 = ((2*(_X4-_X2)) - (_H2 * _U2));
+    _U3 = _H3/_L3;
+    _Z3 = ((_A3 - (_H2*_Z2))/_L3);
+
+    //Paso 5
+    _L4 = 1;
+    _Z4 = 0;
+    _C4 = 0;
+
+    //Paso 6
+    _C3 = _Z3 - (_U3*_C4);
+    _B3 = (((_Y4-_Y3)/_H3) - ((_H3*(_C4+2*_C3))/3));
+    _D3 = ((_C4 - _C3)/(3*_H3));
+
+    _C2 = _Z2 - (_U2*_C3);
+    _B2 = (((_Y3-_Y2)/_H2) - ((_H2*(_C3+2*_C2))/3));
+    _D2 = ((_C3 - _C2)/(3*_H2));
+
+    _C1 = _Z1 - (_U1*_C2);
+    _B1 = (((_Y2-_Y1)/_H1) - ((_H1*(_C2+2*_C1))/3));
+    _D1 = ((_C2 - _C1)/(3*_H1));
+
+    _C0 = _Z0 - (_U0*_C1);
+    _B0 = (((_Y1-_Y0)/_H0) - ((_H0*(_C1+2*_C0))/3));
+    _D0 = ((_C1 - _C0)/(3*_H0));
+
+    resultado = 'Ecuación 1 = $_Y0 + $_B0 * (x - $_X0) + $_C0 * (x - $_X0)^2 + $_D0(x - $_X0)^3\n\nEcuación 2 = $_Y1 + $_B1 * (x - $_X1) + $_C1 * (x - $_X1)^2 + $_D1(x - $_X1)^3\n\nEcuación 3 = $_Y2 + $_B2 * (x - $_X2) + $_C2 * (x - $_X2)^2 + $_D2(x - $_X2)^3\n\nEcuación 4 = $_Y3 + $_B3 * (x - $_X3) + $_C3 * (x - $_X3)^2 + $_D3(x - $_X3)^3';
+
+    return resultado;
+
+  }
+
+  String _matrizCoeficientes() {
+
+    String resultado;
+
+    
 
   }
 
