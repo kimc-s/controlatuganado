@@ -8,7 +8,7 @@ Map <String, WidgetBuilder> getApplicationRoutes() {
   return <String, WidgetBuilder> {
     '/'        : (BuildContext context) => HomePage(),
     'animales' : (BuildContext context) => AnimalesPage(),
-    'datos'    : (BuildContext context) => DataPage(),
+    'datos'    : (BuildContext context) => DataPage1(),
   };
 
 }

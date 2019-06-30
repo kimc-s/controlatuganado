@@ -7,8 +7,6 @@ class AnimalesPage extends StatefulWidget {
 
 class _AnimalesPageState extends State<AnimalesPage> {
 
-  String _nombre = '';
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,11 +17,11 @@ class _AnimalesPageState extends State<AnimalesPage> {
       body: ListView(
         padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 20.0),
         children: <Widget>[
-          _crearAnimal(),
+          _crearAnimal1(context),
           Divider(),
-          _crearAnimal(),
+          _crearAnimal2(context),
           Divider(),
-          _crearAnimal(),
+          _crearAnimal3(context),
         ],
       ),
       floatingActionButton: FloatingActionButton(
@@ -35,9 +33,9 @@ class _AnimalesPageState extends State<AnimalesPage> {
     );
   }
 
-  Widget _crearAnimal() {
+  Widget _crearAnimal1(BuildContext context) {
 
-    return TextField(
+    /*return TextField(
       textCapitalization: TextCapitalization.sentences,
       decoration: InputDecoration(
         border: OutlineInputBorder(
@@ -51,6 +49,64 @@ class _AnimalesPageState extends State<AnimalesPage> {
       onChanged: (valor) => setState(() {
         _nombre = valor;
       }),
+    );*/
+    return ListTile(
+      title: Text('Animal 1'),
+      onTap: () {
+        Navigator.pushNamed(context, 'datos');
+      }
+    );
+
+  }
+
+  Widget _crearAnimal2(BuildContext context) {
+
+    /*return TextField(
+      textCapitalization: TextCapitalization.sentences,
+      decoration: InputDecoration(
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(20.0),
+        ),
+        counter: Text('Letras ${_nombre.length}'),
+        hintText: 'Nombre del animal',
+        labelText: 'Nombre',
+        icon: Icon(Icons.explore),
+      ),
+      onChanged: (valor) => setState(() {
+        _nombre = valor;
+      }),
+    );*/
+    return ListTile(
+      title: Text('Animal 2'),
+      onTap: () {
+        Navigator.pushNamed(context, 'datos');
+      }
+    );
+
+  }
+
+    Widget _crearAnimal3(BuildContext context) {
+
+    /*return TextField(
+      textCapitalization: TextCapitalization.sentences,
+      decoration: InputDecoration(
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(20.0),
+        ),
+        counter: Text('Letras ${_nombre.length}'),
+        hintText: 'Nombre del animal',
+        labelText: 'Nombre',
+        icon: Icon(Icons.explore),
+      ),
+      onChanged: (valor) => setState(() {
+        _nombre = valor;
+      }),
+    );*/
+    return ListTile(
+      title: Text('Animal 3'),
+      onTap: () {
+        Navigator.pushNamed(context, 'datos');
+      }
     );
 
   }
