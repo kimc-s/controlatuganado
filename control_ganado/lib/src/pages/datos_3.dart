@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 
-class DataPage1 extends StatefulWidget {
+class DataPage3 extends StatefulWidget {
   @override
-  _DataPage1State createState() => _DataPage1State();
+  _DataPage3State createState() => _DataPage3State();
 }
 
-class _DataPage1State extends State<DataPage1> {
+class _DataPage3State extends State<DataPage3> {
 
-  String _nombre = 'Animal 1';
-  String _selectedRaza = 'Raza 1';
-  String _fechaN = '1993-04-15';
-  String _fechaP = '2009-08-06';
-  String _selectedYear = '2000';
+  String _nombre = 'Animal 3';
+  String _selectedRaza = 'Raza 3';
+  String _fechaN = '1997-10-17';
+  String _fechaP = '2015-12-25';
+  String _selectedYear = '2012';
 
   List<String> _razas = ['Seleccionar', 'Raza 1', 'Raza 2', 'Raza 3'];
   List<String> _year = ['Año', '2000', '2001', '2002', '2003', '2004', '2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019'];
@@ -496,7 +496,7 @@ class _DataPage1State extends State<DataPage1> {
         Text('Matriz de coeficientes', style: TextStyle(fontWeight: FontWeight.w600, fontSize: 16)),
         SizedBox(height: 10.0),
         Center(
-          child: Text('3\t\t\t\t4\t\t\t\t5\t\t\t\t6\t\t\t\t7\n3\t\t\t\t4\t\t\t\t5\t\t\t\t6\t\t\t\t7\n3\t\t\t\t4\t\t\t\t5\t\t\t\t6\t\t\t\t7\n3\t\t\t\t4\t\t\t\t5\t\t\t\t6\t\t\t\t7\n3\t\t\t\t4\t\t\t\t5\t\t\t\t6\t\t\t\t7', style: TextStyle(fontSize: 17)),
+          child: Text(_matrizCoeficientes(), style: TextStyle(fontSize: 16)),
         ),
       ],
     );
@@ -558,7 +558,32 @@ class _DataPage1State extends State<DataPage1> {
     _B0 = (((_Y1-_Y0)/_H0) - ((_H0*(_C1+2*_C0))/3));
     _D0 = ((_C1 - _C0)/(3*_H0));
 
-    resultado = 'Ecuación 1 = $_Y0 + $_B0 * (x - $_X0) + $_C0 * (x - $_X0)^2 + $_D0(x - $_X0)^3\n\nEcuación 2 = $_Y1 + $_B1 * (x - $_X1) + $_C1 * (x - $_X1)^2 + $_D1(x - $_X1)^3\n\nEcuación 3 = $_Y2 + $_B2 * (x - $_X2) + $_C2 * (x - $_X2)^2 + $_D2(x - $_X2)^3\n\nEcuación 4 = $_Y3 + $_B3 * (x - $_X3) + $_C3 * (x - $_X3)^2 + $_D3(x - $_X3)^3';
+    String y0 = _Y0.toStringAsFixed(2);
+    String y1 = _Y1.toStringAsFixed(2);
+    String y2 = _Y2.toStringAsFixed(2);
+    String y3 = _Y3.toStringAsFixed(2);
+    
+    String b0 = _B0.toStringAsFixed(2);
+    String b1 = _B1.toStringAsFixed(2);
+    String b2 = _B2.toStringAsFixed(2);
+    String b3 = _B3.toStringAsFixed(2);
+
+    String x0 = _X0.toStringAsFixed(2);
+    String x1 = _X1.toStringAsFixed(2);
+    String x2 = _X2.toStringAsFixed(2);
+    String x3 = _X3.toStringAsFixed(2);
+
+    String c0 = _C0.toStringAsFixed(2);
+    String c1 = _C1.toStringAsFixed(2);
+    String c2 = _C2.toStringAsFixed(2);
+    String c3 = _C3.toStringAsFixed(2);
+
+    String d0 = _D0.toStringAsFixed(2);
+    String d1 = _D1.toStringAsFixed(2);
+    String d2 = _D2.toStringAsFixed(2);
+    String d3 = _D3.toStringAsFixed(2);
+
+    resultado = 'Ecuación 1 = $y0 + $b0 * (x - $x0) + $c0 * (x - $x0)^2 + $d0(x - $x0)^3\n\nEcuación 2 = $y1 + $b1 * (x - $x1) + $c1 * (x - $x1)^2 + $d1(x - $x1)^3\n\nEcuación 3 = $y2 + $b2 * (x - $x2) + $c2 * (x - $x2)^2 + $d2(x - $x2)^3\n\nEcuación 4 = $y3 + $b3 * (x - $x3) + $c3 * (x - $x3)^2 + $d3(x - $x3)^3';
 
     return resultado;
 
@@ -568,7 +593,39 @@ class _DataPage1State extends State<DataPage1> {
 
     String resultado;
 
-    
+    String y0 = _Y0.toStringAsFixed(2);
+    String y1 = _Y1.toStringAsFixed(2); 
+    String y2 = _Y2.toStringAsFixed(2); 
+    String y3 = _Y3.toStringAsFixed(2); 
+    String y4 = _Y4.toStringAsFixed(2);
+
+    String b0 = _B0.toStringAsFixed(2);
+    String b1 = _B1.toStringAsFixed(2); 
+    String b2 = _B2.toStringAsFixed(2); 
+    String b3 = _B3.toStringAsFixed(2); 
+    String b4 = '4e+33';
+
+    String c0 = _C0.toStringAsFixed(2);
+    String c1 = _C1.toStringAsFixed(2); 
+    String c2 = _C2.toStringAsFixed(2); 
+    String c3 = _C3.toStringAsFixed(2); 
+    String c4 = _C4.toStringAsFixed(2);
+
+    String d0 = _D0.toStringAsFixed(2);
+    String d1 = _D1.toStringAsFixed(2); 
+    String d2 = _D2.toStringAsFixed(2); 
+    String d3 = _D3.toStringAsFixed(2); 
+    String d4 = '4e+33';
+
+    String x0 = _X0.toStringAsFixed(2);
+    String x1 = _X1.toStringAsFixed(2); 
+    String x2 = _X2.toStringAsFixed(2); 
+    String x3 = _X3.toStringAsFixed(2); 
+    String x4 = _X4.toStringAsFixed(2);
+
+    resultado = '$y0\t\t\t\t$y1\t\t\t\t$y2\t\t\t\t$y3\t\t\t\t$y4\n$b0\t\t\t\t$b1\t\t\t\t$b2\t\t\t\t$b3\t\t\t\t$b4\n$c0\t\t\t\t$c1\t\t\t\t$c2\t\t\t\t$c3\t\t\t\t$c4\n$d0\t\t\t\t$d1\t\t\t\t$d2\t\t\t\t$d3\t\t\t\t$d4\n$x0\t\t\t\t$x1\t\t\t\t$x2\t\t\t\t$x3\t\t\t\t$x4';
+
+    return resultado;
 
   }
 

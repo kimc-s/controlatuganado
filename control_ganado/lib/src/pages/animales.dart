@@ -25,7 +25,7 @@ class _AnimalesPageState extends State<AnimalesPage> {
         ],
       ),
       floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.add),
+        child: Icon(Icons.arrow_back_ios),
         onPressed: () {
           Navigator.pushNamed(context, 'datos');
         },
@@ -53,7 +53,7 @@ class _AnimalesPageState extends State<AnimalesPage> {
     return ListTile(
       title: Text('Animal 1'),
       onTap: () {
-        Navigator.pushNamed(context, 'datos');
+        Navigator.pushNamed(context, 'datos1');
       }
     );
 
@@ -79,7 +79,7 @@ class _AnimalesPageState extends State<AnimalesPage> {
     return ListTile(
       title: Text('Animal 2'),
       onTap: () {
-        Navigator.pushNamed(context, 'datos');
+        Navigator.pushNamed(context, 'datos2');
       }
     );
 
@@ -105,7 +105,7 @@ class _AnimalesPageState extends State<AnimalesPage> {
     return ListTile(
       title: Text('Animal 3'),
       onTap: () {
-        Navigator.pushNamed(context, 'datos');
+        Navigator.pushNamed(context, 'datos3');
       }
     );
 
