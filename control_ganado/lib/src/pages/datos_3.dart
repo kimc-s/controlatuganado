@@ -121,7 +121,6 @@ class _DataPage3State extends State<DataPage3> {
   }
 
   Widget _ingresarNombre() {
-    _inputController3.text = _nombre;
     return TextField(
       //autofocus: true,
       textCapitalization: TextCapitalization.sentences,
@@ -130,7 +129,7 @@ class _DataPage3State extends State<DataPage3> {
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(20.0),
         ),
-        hintText: 'Ingrese el nombre',
+        hintText: '$_nombre',
         labelText: 'Nombre',
         suffixIcon: Icon(Icons.accessibility),
         icon: Icon(Icons.account_circle),
@@ -299,16 +298,7 @@ class _DataPage3State extends State<DataPage3> {
   }
 
   Widget _ingresarDatos() {
-    _conX1.text = _X0.toString();
-    _conX2.text = _X1.toString();
-    _conX3.text = _X2.toString();
-    _conX4.text = _X3.toString();
-    _conX5.text = _X4.toString();
-    _conY1.text = _Y0.toString();
-    _conY2.text = _Y1.toString();
-    _conY3.text = _Y2.toString();
-    _conY4.text = _Y3.toString();
-    _conY5.text = _Y4.toString();
+
     return Column(
       children: <Widget>[
 
@@ -320,7 +310,7 @@ class _DataPage3State extends State<DataPage3> {
               child: TextField(
                 controller: _conX1,
                 decoration: InputDecoration(
-                  hintText: 'X1',
+                  hintText: '$_X0',
                 ),
                 onChanged: (valor) => setState(() {
                   _X0 = double.parse(valor);
@@ -334,7 +324,7 @@ class _DataPage3State extends State<DataPage3> {
               child: TextField(
                 controller: _conY1,
                 decoration: InputDecoration(
-                  hintText: 'Y1',
+                  hintText: '$_Y0',
                 ),
                 onChanged: (valor) => setState(() {
                   _Y0 = double.parse(valor);
@@ -354,7 +344,7 @@ class _DataPage3State extends State<DataPage3> {
               child: TextField(
                 controller: _conX2,
                 decoration: InputDecoration(
-                  hintText: 'X2',
+                  hintText: '$_X1',
                 ),
                 onChanged: (valor) => setState(() {
                   _X1 = double.parse(valor);
@@ -368,7 +358,7 @@ class _DataPage3State extends State<DataPage3> {
               child: TextField(
                 controller: _conY2,
                 decoration: InputDecoration(
-                  hintText: 'Y2',
+                  hintText: '$_Y1',
                 ),
                 onChanged: (valor) => setState(() {
                   _Y1 = double.parse(valor);
@@ -388,7 +378,7 @@ class _DataPage3State extends State<DataPage3> {
               child: TextField(
                 controller: _conX3,
                 decoration: InputDecoration(
-                  hintText: 'X3',
+                  hintText: '$_X2',
                 ),
                 onChanged: (valor) => setState(() {
                   _X2 = double.parse(valor);
@@ -402,7 +392,7 @@ class _DataPage3State extends State<DataPage3> {
               child: TextField(
                 controller: _conY3,
                 decoration: InputDecoration(
-                  hintText: 'Y3',
+                  hintText: '$_Y2',
                 ),
                 onChanged: (valor) => setState(() {
                   _Y2 = double.parse(valor);
@@ -422,7 +412,7 @@ class _DataPage3State extends State<DataPage3> {
               child: TextField(
                 controller: _conX4,
                 decoration: InputDecoration(
-                  hintText: 'X4',
+                  hintText: '$_X3',
                 ),
                 onChanged: (valor) => setState(() {
                   _X3 = double.parse(valor);
@@ -436,7 +426,7 @@ class _DataPage3State extends State<DataPage3> {
               child: TextField(
                 controller: _conY4,
                 decoration: InputDecoration(
-                  hintText: 'Y4',
+                  hintText: '$_Y3',
                 ),
                 onChanged: (valor) => setState(() {
                   _Y3 = double.parse(valor);
@@ -456,7 +446,7 @@ class _DataPage3State extends State<DataPage3> {
               child: TextField(
                 controller: _conX5,
                 decoration: InputDecoration(
-                  hintText: 'X5',
+                  hintText: '$_X4',
                 ),
                 onChanged: (valor) => setState(() {
                   _X4 = double.parse(valor);
@@ -470,7 +460,7 @@ class _DataPage3State extends State<DataPage3> {
               child: TextField(
                 controller: _conY5,
                 decoration: InputDecoration(
-                  hintText: 'Y5',
+                  hintText: '$_Y4',
                 ),
                 onChanged: (valor) => setState(() {
                   _Y4 = double.parse(valor);

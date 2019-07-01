@@ -10,17 +10,17 @@ class HomePage extends StatelessWidget {
       ),
       body: Center(
         child: RaisedButton(
-                child: Text('ANIMALES', style: TextStyle(fontSize: 30.0)),
-                color: Colors.lightBlue,
-                textColor: Colors.white,
-                elevation: 10.0,
-                shape: StadiumBorder(),
-                onPressed: () {
-                  Navigator.pushNamed(context, 'animales');
-                },
-              ),
+          child: Text('ANIMALES', style: TextStyle(fontSize: 30.0)),
+          color: Colors.lightBlue,
+          textColor: Colors.white,
+          elevation: 10.0,
+          shape: StadiumBorder(),
+          onPressed: () {
+            Navigator.pushNamed(context, 'animales');
+          },
+        ),
       ),
-      backgroundColor: Colors.green,
+      backgroundColor: Colors.orange,
     );
   }
 }
