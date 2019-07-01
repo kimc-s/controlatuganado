@@ -1,2 +1,2 @@
-# controlatuganado
-flutter application
+# Control Ganado
+Flutter application
